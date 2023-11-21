@@ -1,0 +1,84 @@
+{
+    "CHILLER" : {
+        "TYPE": {
+            "type": "keyword",
+            "values": ["ELEC-OPEN-CENT", "ELEC-OPEN-REC", "ELEC-HERM-CENT", "ELEC-HERM-REC", "ELEC-SCREW", "ELEC-HTREC", "ABSOR-1", "ABSOR-2", "GAS-ABSOR", "ENGINE", "HEAT-PUMP", "LOOP-TO-LOOP-HP", "WATER-ECONOMIZER"]
+        },
+        "CONDENSER-TYPE": {
+            "type": "keyword",
+            "values": ["WATER-COOLED", "AIR-COOLED", "REMOTE-AIR-COOLED", "REMOTE-EVAP-COOLED"]
+        },
+        "DESIGN-CHW-T": { "type": "float" },
+        "DESIGN-COND-T": { "type": "float" },
+        "DESIGN-PLR": {
+            "type": "float",
+            "min": 0,
+            "max": 1
+        },
+        "RATED-CHW-T": { "type": "float" },
+        "RATED-COND-T": { "type": "float" },
+        "RATED-CW-FLOW": { "type": "float" },
+        "SPECIFIED-AT": {
+            "type": "keyword",
+            "values": ["RATED-CONDITIONS", "DESIGN-CONDITIONS"]
+        },
+        "CAPACITY": { "type": "float" },
+        "CAPACITY-RATIO": {
+            "type": "float",
+            "min": 0,
+            "max": 1
+        },
+        "MAX-RATIO": {
+            "type": "float",
+            "min": 0,
+            "max": 1
+        },
+        "MIN-RATIO": {
+            "type": "float",
+            "min": 0,
+            "max": 1
+        },
+        "CAPACITY-FT": { "type": "curve" },
+        "HGB-RATIO": {
+            "type": "float",
+            "min": 0,
+            "max": 1
+        },
+        "START-UP-TIME": { "type": "float" },
+        "SHUT-DOWN-TIME": { "type": "float" },
+        "STANDBY-TIME": { "type": "float" },
+        "ELEC-INPUT-RATIO": { "type": "float" },
+        "EIR-FT": { "type": "curve" },
+        "EIR-FPLR": { "type": "curve" },
+        "VARIABLE-SPEED": {
+            "type": "keyword",
+            "values": ["YES", "NO", "Sml-Frictionless-Water-3F", "Sml-Frictionless-Water-10F"]
+        },
+        "COMPRESSORS/CKT": {
+            "type": "keyword",
+            "values": ["ONE", "TWO", "THREE", "FOUR"]
+        },
+        "ELEC-TO-COND": {
+            "type": "float",
+            "min": 0,
+            "max": 1
+        },
+        "HEAT-INPUT-RATIO": { "type": "float" },
+        "HIR-FT": { "type": "curve" },
+        "HIR-FPLR": { "type": "curve" },
+        "HEAT-TO-COND": {
+            "type": "float",
+            "min": 0,
+            "max": 1
+        },
+        "AUX-KW": { "type": "float" },
+        "AUX-MODE": {
+            "type": "keyword",
+            "values": ["ALWAYS", "WHEN-ON", "WHEN-OFF", "SCHEDULED"]
+        },
+        "AUX-SCHEDULE": { "type": "schedule" },
+        "AUX-METER": { "type": "meter" },
+        "ELEC-METER": { "type": "meter" },
+        "FUEL-METER": { "type": "meter" }
+    }
+}
