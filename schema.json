@@ -80,5 +80,52 @@
         "AUX-METER": { "type": "meter" },
         "ELEC-METER": { "type": "meter" },
         "FUEL-METER": { "type": "meter" }
+    },
+    "WINDOW-LAYER": {
+        "TYPE": {
+            "type": "keyword",
+            "values": ["GLASS", "GAP", "BLIND"]
+        },
+        "TRANS-SOL-BB": { "type": "float" },
+        "REFL-SOL-BB":  { "type": "float" },
+        "TRANS-SOL-BH": { "type": "float" },
+        "REFL-SOL-BH":  { "type": "float" },
+        "BACKREFL-SOL-BH": { "type": "float" },
+        "TRANS-SOL-HH": { "type": "float" },
+        "REFL-SOL-HH":  { "type": "float" },
+        "BACKREFL-SOL-HH":  { "type": "float" },
+        "TRANS-VIS-BB": { "type": "float" },
+        "REFL-VIS-BB":  { "type": "float" },
+        "BACKREFL-VIS-BB":  { "type": "float" },
+        "TRANS-VIS-BH":  { "type": "float" },
+        "REFL-VIS-BH":  { "type": "float" },
+        "BACKREFL-VIS-BH":  { "type": "float" },
+        "TRANS-VIS-HH":  { "type": "float" },
+        "REFL-VIS-HH":  { "type": "float" },
+        "BACKREFL-VIS-HH":  { "type": "float" },
+        "TRANS-IR":  { "type": "float" },
+        "EMIS-IR": { "type": "float" },
+        "BACKEMIS-IR": { "type": "float" },
+        "SLAT-ORIENTATION": {
+            "type": "keyword",
+            "values": ["HORIZONTAL", "VERTICAL"]
+        },
+        "SLAT-ANGLE": { "type": "float" },
+        "SLAT-ANGLE-MIN": { "type": "float" },
+        "SLAT-ANGLE-MAX": { "type": "float" },
+        "SLAT-WIDTH": { "type": "float" },
+        "SLAT-SEPARATION": { "type": "float" },
+        "BLIND-COVER": { "type": "float" },
+        "BLIND-COVER-MIN": { "type": "float" },
+        "BLIND-COVER-MAX": { "type": "float" },
+        "THICKNESS": { "type": "float", "unit": "ft" },
+        "CONDUCTIVITY": { "type": "float", "unit": "Btu/ft-R-hr" },
+        "D-CONDUCTIVITY": { "type": "float" },
+        "VISCOSITY": { "type": "float" },
+        "D-VISCOSITY": { "type": "float" },
+        "DENSITY": { "type": "float" },
+        "D-DENSITY": { "type": "float" },
+        "PRANDTL-NUMB": { "type": "float" },
+        "D-PRANDTL-NUMB": { "type": "float" }
     }
 }
